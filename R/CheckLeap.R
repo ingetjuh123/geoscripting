@@ -1,3 +1,4 @@
+#Checking whether year is a leap year
 CheckLeap <- function (year){
   if (year %% 4 == 0){
     return(TRUE)
@@ -13,5 +14,5 @@ CheckLeap <- function (year){
   }
 }
 
-CheckLeap(2000)
+
 
