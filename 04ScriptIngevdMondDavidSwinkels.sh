@@ -1,4 +1,4 @@
-#!bin/data
+#!/bin/bash
 echo "Script0rs - Inge/David"
 echo "12 January 2017"
 echo "Calculate LandSat NDVI"
