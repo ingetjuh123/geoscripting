@@ -4,7 +4,6 @@ echo "12 January 2017"
 echo "Calculate LandSat NDVI"
 clear
 cp LE71700552001036SGS00_SR_Gewata_INT1U.tif input.tif
-
 echo "calculate ndvi"
 gdal_calc.py -A $fn --A_band=4 -B input.tif --B_band=3 --outfile=ndvi.tif --calc="(A.astype(float)-B)/(A.astype(float)+B)" --type='Float32'
 echo "resampling the NDVI tif file to pixels of 60m"
